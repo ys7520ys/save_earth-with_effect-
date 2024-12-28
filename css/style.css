@@ -1,0 +1,465 @@
+/* font */
+body, html{
+  font-family: "Noto Sans KR", serif;
+  font-style: normal;
+}
+
+/* header start */
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0px 30px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+}
+header .logo{
+  font-size: 20px;
+  font-weight: 300;
+  float: left;
+}
+header ul{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 600px;
+}
+header ul li{
+  font-size: 1.1em;
+}
+/* header end */
+
+/* swiper_section start */
+.swiper {
+  margin-top: 60px;
+  width: 100%;
+  height: 780px;
+}
+.swiper-slide {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+}
+.swiper-pagination-bullet {
+  background: #ccc;
+}
+.swiper-pagination-bullet-active {
+  background: #333;
+}
+/* swiper_section endd */
+
+/* first_section start */
+.firstSection{
+  height: 1100px;
+  width: 1260px;
+  margin: auto;
+  padding: 170px 0px 220px;
+  background-color: #fff;
+}
+.firstSection h2.section-title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 18px;
+  color: #333;
+}
+.firstSection h3.section-subtitle{
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #333;
+}
+.firstSection>div{
+  height: 450px;
+  width: 100%;
+  margin-top: 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.firstSection .img_box{
+  position: relative;
+  width: 620px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+}
+.firstSection .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s, transform 0.4s;
+}
+.firstSection .text_box{
+  bottom: 30px;
+  left: 30px;
+  position: absolute;
+  height: 192px;
+  width: 560px;
+}
+.firstSection .text_box h2.card-title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  font-size: 38px;
+  font-weight: 400;
+  color: white;
+}
+.firstSection .text_box p.card-subtitle{
+  position: absolute;
+  left: 0;
+  top: 52px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ddd;
+}
+.firstSection .text_box a{
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 38px;
+  width: 120px;
+  background-color: #666;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+.firstSection .text_box a:hover{
+  background-color: white;
+  color: black;
+} 
+/* first_section end */
+
+/* second_section start */
+section.secondSection{
+  height: 1000px;
+  width: 1260px;
+  margin: auto;
+  padding: 180px 0px 190px;
+  background-color: #fff;
+}
+.secondSection>div{
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+}
+.secondSection .text_box{
+  width: 35%;
+  height: 100%;
+  padding: 0px 20px 0px 0px;
+}
+.text_box h2.section-title{
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 19px;
+  color: black;
+}
+.text_box h3.section-subtitle{
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: black;
+}
+.text_box ul{
+  margin-top: 50px;
+  padding-left: 5px;
+}
+.text_box ul li{
+  padding: 6px 0px;
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.text_box ul li::before{
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #666666;
+  border-radius: 50%;
+  margin: 5px 15px 3px 0px;
+}
+.secondSection .img_box{
+  margin-left: 10px;
+  display: inline-flex;
+  gap: 15px;
+  width: 65%;
+}
+.secondSection .img_box>div{
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+}
+.secondSection .img_box div img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.secondSection .img_box a{
+  position: absolute;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  left: 30px;
+  bottom: 30px;
+  width: 200px;
+  height: 40px;
+  background-color: #707070;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  transition: background-color 0.2s;
+}
+.secondSection .img_box a:hover{
+  background-color: white;
+  color: black;
+}
+/* second_section end */
+
+/* third_section start */
+section.thirdSection{
+  margin: auto;
+  width: 1260px;
+  height: 1000px;
+  padding-top: 130px;
+  background-color: #fff;
+}
+.thirdSection h2.section-title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 18px;
+  color: #333;
+}
+.thirdSection h3.section-subtitle{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 75px;
+}
+.thirdSection .card_box{
+  display: inline-flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.thirdSection .card_box>div{
+  height: 550px;
+  width: 33%;
+}
+.thirdSection .card_box>div .img_box{
+  height: 50%;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 7px;
+}
+.thirdSection .card_box div .img_box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.thirdSection .text_box{
+  height: 50%;
+  padding: 27px 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.thirdSection .text_box h2.card-title{
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.thirdSection .text_box p.card-subtitle{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  color: #333;
+}
+.thirdSection .text_box a{
+  width: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+  border: none;
+  text-align: left;
+  text-decoration: underline;
+}
+/* third_section end */
+
+/* banner_section start */
+section.bannerSection{
+  position: relative;
+  width: 100%;
+  height: 380px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+section.bannerSection .section-title{
+  position: absolute;
+  font-weight: 500;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  color: #3c3c3c
+}
+/* banner_section end */
+
+/* fourth_section start */
+section.fourthSection{
+  height: 1200px;
+  width: 1260px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: #fff;
+}
+section.fourthSection h2.section-title{
+  font-size: 60px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #333;
+}
+section.fourthSection h3.section-subtitle{
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+}
+section.fourthSection .card_box{
+  margin-top: 30px;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.fourthSection .card_box .card{
+  padding: 20px 0px 0px 30px;
+  margin-bottom: 17px;
+  height: 315px;
+  width: 400px;
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  -webkit-transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s;
+  transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s;
+  border-radius: 10px;
+}
+.card_box .card .img_box{
+  width: 33px;
+  margin-bottom: 14px;
+}
+.card_box .card .text_box{
+  position: relative;
+  margin-bottom: 12px;
+  width: 360px;
+  height: 230px;
+}
+.card_box .card .text_box h2.card-title{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+.card_box .card .text_box p.card-subtitle{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+.card_box .card .text_box a{
+  position: absolute;
+  font-size: 16px;
+  bottom: 10px;
+  text-decoration: underline;
+}
+/* fourth_section end */
+
+/* footer start*/
+footer{
+  background-color: #f5f5f5;
+  width: 100%;
+}
+footer > div{
+  height: 300px;
+  width: 1260px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+footer h2{
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+footer nav a{
+  display: block;
+  padding: 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+footer nav a:hover{
+  text-decoration: underline;
+}
+/* footer end */
+
+/* sr-only Style */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
